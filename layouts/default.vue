@@ -103,14 +103,14 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'data->reactive',
+          to: '/data->reactive'
         }
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      // miniVariant: false,
+      // right: true,
+      // rightDrawer: false,
+      // title: 'Vuetify.js'
     }
   }
 }

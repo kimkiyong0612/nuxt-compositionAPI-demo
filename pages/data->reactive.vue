@@ -15,17 +15,17 @@ export default defineComponent({
     // object declare
     const data = reactive({
         users: [
-        { id: 1, name: '加藤かな' },
-        { id: 2, name: '田中紘一' },
-        { id: 3, name: '山田太郎' },
+        { id: 1, name: 'ドラえもん' },
+        { id: 2, name: 'のび太くん' },
+        { id: 3, name: 'しずかちゃん' },
         ],
     })
-    // primitive declare
-    const title = ref("タイトル変更前")
+    // primitive declare(internally reactive used)
+    const title = ref("平和な世界")
 
     setTimeout(() => {
-        data.users.push({ id: 4, name: '新藤誠' })
-        title.value = "変更後Title"
+        data.users.push({ id: 4, name: 'ジャイアン' })
+        title.value = "崩れた"
     }, 3000);
 
     return {
