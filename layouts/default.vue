@@ -42,20 +42,8 @@
       >
         <v-icon>mdi-application</v-icon>
       </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -79,12 +67,6 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -105,12 +87,37 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'data->reactive',
           to: '/data->reactive'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'computed->computed',
+          to: '/computed->computed'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'methods->function',
+          to: '/methods->function'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'watch->watchEvent',
+          to: '/watch->watchEvent'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'created->function',
+          to: '/created->function'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'mounted->onMounted',
+          to: '/mounted->onMounted'
         }
       ],
-      // miniVariant: false,
-      // right: true,
-      // rightDrawer: false,
-      // title: 'Vuetify.js'
+      miniVariant: false,
+      right: true,
+      rightDrawer: false,
+      title: ''
     }
   }
 }
