@@ -1,10 +1,12 @@
 <template>
-    <div>
-        <h1>{{ title }}</h1>
+  <div>
+    <v-card-text>
+      <h1>{{ title }}</h1>
         <ul>
-        <li v-for="u in data.users" :key="u.id">{{ u.id }} {{ u.name }}</li>
+          <li v-for="u in data.users" :key="u.id">{{ u.id }} {{ u.name }}</li>
         </ul>
-    </div>
+    </v-card-text>
+  </div>
 </template>
 
 <script lang="js">
@@ -32,6 +34,6 @@ export default defineComponent({
         data,
         title,
     }
-  },
+    },
 })
 </script>
